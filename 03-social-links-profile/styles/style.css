@@ -61,24 +61,32 @@ main {
 .socialmedia-section {    
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    width: 100%;
-}
-.socialmedia-section a {
-    text-decoration: none;
-    color: white;
-}
-.socialmedia-section p {
-    background-color: var(--bg-socialmedia);
-    border-radius: 5px;
-    padding: 10px;
-    font-weight: 600;
+    align-items: center;
     text-align: center;
     width: 100%;
 }
-.socialmedia-section p:hover {
+.socialmedia-list {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+.socialmedia-list li {
+    background-color: var(--bg-socialmedia);
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 10px;
+    font-weight: 600;
+}
+.socialmedia-list a {
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+.socialmedia-list li:hover {
     background-color: var(--location);
-    color: var(--bg-color-body);
+}
+.socialmedia-list li:hover a {
+    color: var(--bg-color-body); /* Cambiar color del texto en hover */
 }
 
 /* attribution section */
