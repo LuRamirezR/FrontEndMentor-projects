@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* General styles to center all content */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-color-body);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* All content container */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-color-main);
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+}
+
+/* Container of img, name, location, profession */
+.profile-section {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.profile-section img {
+    border-radius: 50%;
+    width: 90px; /* Adjusted size */
+}
+.profile-name {
+    font-size: 24px;
+    font-weight: 600;
+    padding: 20px 0 8px;
+}
+.profile-location {
+    color: var(--location);
+    font-size: 14px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+.profile-profession {
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+
+/* Container of SocialMedia */
+.socialmedia-section {    
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+.socialmedia-section a {
+    text-decoration: none;
+    color: white;
+}
+.socialmedia-section p {
+    background-color: var(--bg-socialmedia);
+    border-radius: 5px;
+    padding: 10px;
+    font-weight: 600;
+    text-align: center;
+    width: 100%;
+}
+.socialmedia-section p:hover {
+    background-color: var(--location);
+    color: var(--bg-color-body);
+}
+
+/* attribution section */
+/* .attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); } */

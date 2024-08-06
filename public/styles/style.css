@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 90%;
+    height: 100vh;
+    margin: 0 auto;
+    font-family: 'Open Sans Variable', sans-serif;
+    background-color: var(--bg-color);
+}
+
+/* Header styles */
+/* Social Media */
+.social-media {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    padding-top: 10px;
+}
+/* Titles */
+.main-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.main-title h1 {
+    color: var(--title-color);
+    font-size: 36px;
+    font-weight: 800;
+}
+.main-title h3 {
+    color: var(--text-color);
+    font-size: 20px;
+}
+
+/* Main styles */
+.newbie-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #adb5bd;
+    box-shadow: 5px 5px 4px 0px rgba(206,212,218,1);
+    border-radius: 8px;
+    padding: 10px;
+}
+.newbie-section h3 {
+    color: #9e5c67;
+    font-size: 20px;
+    padding-bottom: 10px;
+    font-weight: 700;
+}
+
+.challenges-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+/* Each challenge */
+.challenge {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #adb5bd;
+    border-radius: 5px;
+    background-color: var(--bg-card);
+    box-shadow: 5px 5px 4px 0px rgba(206,212,218,1);
+    padding: 5px;
+    text-decoration: none;
+}
+
+.preview-img {
+    width: 70%;
+}
+.challenge-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+.challenge-description {
+    color: var(--text-color);
+}
+.challenge-description h4 {
+    padding: 8px 0 5px;
+}
+
+/* Hover */
+.challenge:hover {
+    transform: scale(1.03);
+}
+
+/* Media-Query */
+/* Tablets en orientación vertical */
+@media (min-width: 600px) and (max-width: 899px) {
+
+}
+/* Tablets en orientación horizontal */
+@media (min-width: 900px) and (max-width: 1199px) {
+
+}
+/* Laptops and Desktops */
+@media (min-width: 1200px) {
+    .main-title h1 {
+        font-size: 44px;
+    }
+    .newbie-section h3 {
+        font-size: 24px;
+    }
+    .challenges-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        
+    }
+}

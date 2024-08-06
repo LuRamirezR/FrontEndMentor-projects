@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main */
+body {
+    background-color: #D5E1EF;
+    font-family: "Outfit", sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container - FlexBox to organize the content (center) */
+.qr-section {
+    background-color: #fff;
+    padding: 16px 16px 40px 16px;
+    border-radius: 20px;
+    width: 320px;
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Image configurations */
+.qr-section img {
+    width: 100%;
+    border-radius: 20px;
+    
+}
+
+.first-text {
+    color: #1F314F;
+    font-weight: bold;
+    font-size: 22px;
+    padding: 24px 0;
+    text-align: center;
+}
+
+.second-text {
+    color: #68778D;
+    font-size: 15px;
+    text-align: center;
+}
+
+/* Footer */
+.attribution { 
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: #3e52a3;
+}
