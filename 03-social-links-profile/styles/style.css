@@ -68,7 +68,7 @@ main {
 .socialmedia-list {
     list-style: none;
     padding: 0;
-    width: 100%;
+    width: 100%; /*the list occupies the entire width of the container*/
 }
 .socialmedia-list li {
     background-color: var(--bg-socialmedia);
@@ -86,7 +86,7 @@ main {
     background-color: var(--location);
 }
 .socialmedia-list li:hover a {
-    color: var(--bg-color-body); /* Cambiar color del texto en hover */
+    color: var(--bg-color-body); /* Change hover text color */
 }
 
 /* attribution section */

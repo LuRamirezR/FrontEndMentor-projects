@@ -1,5 +1,132 @@
+/* Variables */
+:root {
+    --bg-body: #f3e6d8;
+    --bg-article-preparation: #fff5fa;
+    --title-article-preparation: #7b284f;
+    --titles-color: #814731;
+    --title-ppal: #302d2c;
+    --text-color: #4E4943;
+}
 
+/* General styles */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-body);
+    min-height: 100vh;
+    font-family: 'Outfit', sans-serif;
+}
+
+/* Main container */
+main {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    line-height: 1.5;
+    color: var(--text-color);
+}
+
+/* Titles */
+h1, h2, h3 {
+    font-family: "Young Serif", serif;
+}
+h2 {
+    color: var(--titles-color);
+}
+
+/* Main image recipe */
+.img-recipe {
+    width: 100%;
+}
+
+/* Main all text section */
+.alltext-section {
+    padding: 0 20px;
+}
+
+/* Title recipe section (h1) */
+.title-recipe {
+    font-size: 32px;
+    color: var(--title-ppal);
+    line-height: 1;
+}
+/* Preparation time article */
+.preparation-time {
+    background-color: var(--bg-article-preparation);
+    padding: 15px;
+    border-radius: 15px;
+}
+.preparation-time h3 {
+    color: var(--title-article-preparation);
+    margin: 0;
+}
+.preparation-time ul {
+    padding-left: 20px;
+}
+/* Color for the circular bullet */
+.preparation-time ul li::marker {
+    color: var(--title-article-preparation);
+}
+
+/* Ingredients and Instructions */
+ul, ol {
+    padding-left: 20px;
+    color: var(--text-color);
+}
+ul li span,
+ol li span {
+    margin-left: 10px; /* Space between the bullet/numeral and the text */
+}
+ul li::marker {
+    color: var(--titles-color);
+}
+ul li,
+ol li {
+    /* gives space between numerals and bullets */
+    margin-bottom: 10px; 
+}
+ol li::marker {
+    color: var(--titles-color);
+}
+p, li {
+    color: var(--text-color);
+}
+
+/* Third section - Nutrition */
+.nutrition-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.nutrition-value {
+    color: var(--titles-color);
+}
+
+
+/* Media query for laptop */
+@media (min-width: 1024px) {
+    body {
+        height: auto;
+    }
+    main {
+        margin: 32px auto;
+        padding: 16px 32px;
+        width: 100%;
+        max-width: 600px;
+        border-radius: 15px;
+    }
+    .img-recipe {
+        margin-top: 16px;
+        border-radius: 15px;
+    }
+    .alltext-section {
+        padding: 0;
+    }
+}
 
 /* Attribution section */
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+/* .attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); } */
