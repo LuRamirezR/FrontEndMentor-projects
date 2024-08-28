@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+  }
+
+body {
+    font-family: "Manrope", sans-serif;
+    /* font-size: 1.6rem; */
+    background-color: #ecf2f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Main container */
+.article-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    max-width: 32rem;
+    border-radius: 2rem;
+}
+
+.main-img {
+    width: 32rem;
+    border-radius: 2rem 2rem 0 0;
+}
+
+.article-description {
+    padding: 2rem;
+}
+.article-description h1 {
+    color: #48556a;
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+}
+.article-description p {
+    color: #6d7f97;
+    font-size: 1.4rem;
+    margin-bottom: 2.5rem;
+}
+
+/* Author name and share */
+.author-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.author-container img {
+    width: 5rem;
+    border-radius: 50%;
+}
+.author-name {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.author-name h2 {
+    color: #48556a;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.author-name p {
+    color: #6d7f97;
+    font-size: 1.2rem;
+}
+
+.share-btn {
+    border: none;
+    border-radius: 50%;
+}
+.share-img {
+    transform: scale(0.5); /* reduce el tamaño al 50% */
+}
+
+/* Share container - active */
+.share-container-active {
+    background-color: #48556a;
+    display: none;
+}
+.share-container-active p {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #6d7f97;
+    letter-spacing: 0.5rem;
+    margin: 0;
+}
+.share-btn-active {
+    border: none;
+    border-radius: 1rem;
+}
+
+/* Attribution section */
+.attribution { 
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
