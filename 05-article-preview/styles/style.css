@@ -41,7 +41,7 @@ body {
 
 /* article description */
 .article-description {
-    padding: 2rem;
+    padding: 3rem 3rem 2rem;
 }
 .article-description h1 {
     color: var(--color-title);
@@ -58,9 +58,15 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 2rem 2rem;
+    padding: 1rem 3rem 1rem;
     border-radius: 0 0 1rem 1rem;
     background-color: #fff;
+}
+
+.author-info {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
 }
 
 .author-container img {
@@ -88,9 +94,9 @@ body {
     width: 3rem;
     height: 3rem;
 }
-.author {
+/* .author {
     background-color: var(--color-bg);
-}
+} */
 
 /* Share container - active */
 .share-container-active {
@@ -98,8 +104,8 @@ body {
     justify-content: space-between;
     align-items: center;
     background-color: var(--color-title);
-    padding: 2rem 2rem;
-    border-radius: 0 0 2rem 2rem;
+    padding: 2rem 3rem 2rem;
+    border-radius: 0 0 1rem 1rem;
     /* display: none; */
 }
 .share-container-active p {
@@ -150,4 +156,42 @@ body {
 }
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+/* Media query for laptop */
+@media (min-width: 1024px) {
+    /* Main container */
+    .article-container {
+        flex-direction: row;
+        max-width: 74rem;
+        border-radius: 1rem;
+    }
+    /* drawer forniture image */
+    .main-img {
+        height: 29rem;
+        width: 29rem;
+        border-radius: 1rem 0 0 1rem;
+    }
+    /* article description */
+    .article-description {
+        padding: 4rem 4rem 1rem;
+    }
+    .article-description h1 {
+        font-size: 2rem;
+    }
+    .article-description p {
+        font-size: 1.3rem;
+    }
+
+
+    /* Tooltip */
+    .tooltip  {
+        position: absolute;
+        top: 102%;
+        left: 50%;
+        transform: translateX(-50%) scale(0.8);
+        background: white;
+        border-radius: 15px;
+        padding: 2.1rem;
+    }
 }
